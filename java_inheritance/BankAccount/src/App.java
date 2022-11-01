@@ -11,7 +11,9 @@ public class App {
             System.out.println("Please Enter Your Username : ");
             String userName = scanner.nextLine();
             System.out.println("Please Enter Your Password");
-            String password = 
+            String password =scanner.nextLine(); 
+        }else{
+            // create acount class 
         }
 
     }
