@@ -11,6 +11,11 @@ public class Employee {
         this.name = name ; 
         this.department = department;
     }
+    public void printEmployeeData(){
+        System.out.println("Employee Id : "+this.id);
+        System.out.println("Employee Name : "+this.name);
+        System.out.println("Employee Department : "+this.department);
+    }
 
     public String getName() {
         return this.name;
