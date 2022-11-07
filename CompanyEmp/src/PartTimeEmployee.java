@@ -9,6 +9,10 @@ public class PartTimeEmployee extends Employee {
     public String printEmployeeData(){
         return super.printEmployeeData()+"Number Of Hours : "+this.numberOfHours+"\n"+"Hourly Cost : "+this.hourCost;
     }
+    @Override
+    public float calculateSalary(){
+        return this.numberOfHours*this.hourCost;
+    }
 
     public int getNumberOfHours() {
         return this.numberOfHours;

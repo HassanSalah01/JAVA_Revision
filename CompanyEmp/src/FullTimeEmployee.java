@@ -13,6 +13,10 @@ public class FullTimeEmployee extends Employee{
     public String printEmployeeData(){
         return super.printEmployeeData()+"Salary : "+this.salary;
     }
+    @Override
+    public float calculateSalary(){
+        return this.salary-this.tax;
+    }
 
 
 

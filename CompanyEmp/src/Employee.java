@@ -12,9 +12,11 @@ public class Employee {
         this.department = department;
     }
     public String printEmployeeData(){
-        return "Employee Id : "+this.id+"\n"+
-       "Employee Name : "+this.name+"\n"+
+        return "Employee Id : "+this.id+"\n"+"Employee Name : "+this.name+"\n"+
         "Employee Department : "+this.department;
+    }
+    public float calculateSalary(){
+        return 0;
     }
 
     public String getName() {
