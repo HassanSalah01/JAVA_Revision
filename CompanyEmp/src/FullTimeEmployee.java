@@ -10,7 +10,9 @@ public class FullTimeEmployee extends Employee{
     }
 
     @Override
-    
+    public String printEmployeeData(){
+        return super.printEmployeeData()+"Salary : "+this.salary;
+    }
 
 
 

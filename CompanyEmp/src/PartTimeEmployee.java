@@ -5,6 +5,10 @@ public class PartTimeEmployee extends Employee {
     public PartTimeEmployee(String name , String department){
         super(name,department);
     }
+    @Override
+    public String printEmployeeData(){
+        return super.printEmployeeData()+"Number Of Hours : "+this.numberOfHours+"\n"+"Hourly Cost : "+this.hourCost;
+    }
 
     public int getNumberOfHours() {
         return this.numberOfHours;
