@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
     static int empId = 0;
     private String name ;
     private int id ;
@@ -15,9 +15,7 @@ public class Employee {
         return "Employee Id : "+this.id+"\n"+"Employee Name : "+this.name+"\n"+
         "Employee Department : "+this.department;
     }
-    public float calculateSalary(){
-        return 0;
-    }
+    public abstract float calculateSalary();
 
     public String getName() {
         return this.name;

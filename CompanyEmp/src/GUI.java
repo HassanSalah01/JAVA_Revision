@@ -11,5 +11,13 @@ public class GUI {
         scan.close();
         return choice;
     }
+    public static void createEmployee(int empType){
+        if(empType==1){
+            //login Page
+        }else{
+            //Create New User Page
+        }
+
+    }
     
 }

@@ -5,6 +5,6 @@ public class App {
         // PartTimeEmployee p1 = new PartTimeEmployee("ahmed","Finance");
         // System.out.println(p1.printEmployeeData());
 
-        GUI.guiInterface();
+        int x  = GUI.guiInterface();
     }
 }
