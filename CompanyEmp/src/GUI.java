@@ -11,11 +11,26 @@ public class GUI {
         scan.close();
         return choice;
     }
+    public static void signIn(){
+        Scanner scan  = new Scanner(System.in);
+        System.out.println("Please Enter Your UserName ");
+        String userName = scan.nextLine();
+        System.out.println("Pleas Enter Your PassWord");
+        String password = scan.nextLine();
+    }
+    public static void createNewUser(){
+        Scanner scan  = new Scanner(System.in);
+        System.out.println("Please Enter Name");
+        String userName = scan.nextLine();
+        System.out.println("Pleas Departmet ");
+        String password = scan.nextLine();
+    }
     public static void createEmployee(int empType){
         if(empType==1){
+            signIn();
             //login Page
         }else{
-            //Create New User Page
+            createNewUser();
         }
 
     }
