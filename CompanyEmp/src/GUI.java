@@ -17,18 +17,26 @@ public class GUI {
         String userName = scan.nextLine();
         System.out.println("Pleas Enter Your PassWord");
         String password = scan.nextLine();
+        scan.close();
+    }
+    public static String EmpType(int emp){
+        if(emp==1){
+            retrun "Part Time Employee";
+        }else{
+            return "Full Time Employee";
+        }
     }
     public static void createNewUser(){
         Scanner scan  = new Scanner(System.in);
         System.out.println("Please Enter Name");
-        String userName = scan.nextLine();
+        String Name = scan.nextLine();
         System.out.println("Pleas Departmet ");
-        String password = scan.nextLine();
+        String Department = scan.nextLine();
+        scan.close();
     }
     public static void createEmployee(int empType){
         if(empType==1){
             signIn();
-            //login Page
         }else{
             createNewUser();
         }
